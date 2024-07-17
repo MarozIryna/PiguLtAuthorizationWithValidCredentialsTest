@@ -3,8 +3,6 @@
 
 Test scenario is written for Google Chrome browser.
 
-Test scenario:
-
     1. Log in with valid Email format & Password.
     
         1.1.1 Open webpage,
