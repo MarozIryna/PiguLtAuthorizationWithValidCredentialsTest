@@ -1,7 +1,7 @@
 ## Tested page [pigu.lt](https://pigu.lt/lt/).
 # Test case: Possibility to login with valid credentials.
 
-Test scenario and case are written for Google Chrome browser.
+Test scenario is written for Google Chrome browser.
 
 Test scenario:
 
