@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AuthorizationPiguPageTests.PageObjects
 {
-    public class UserNameForTest
+    public static class UserNameForTest
     {
         public static string StartLogin { get; set; } = "testastest40@gmail.com";
 

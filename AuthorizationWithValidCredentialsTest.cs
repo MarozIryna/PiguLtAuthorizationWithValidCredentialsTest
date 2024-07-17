@@ -9,7 +9,6 @@ namespace AuthorizationPiguPageTests
     {
         private IWebDriver driver;
 
-        private readonly By _accountButton = By.XPath("//*[@id='headeMenu']/li[1]/a/i");
         private readonly By _userLogin = By.XPath("//*[@id='headeMenu']/li[1]/div/div/div/div[2]/p");
 
         private const string _expectedLogin = "Sveiki, testastest40@gmail.com!";
@@ -31,8 +30,6 @@ namespace AuthorizationPiguPageTests
             mainMenu.LogIn();
             mainMenu.SingIn(UserNameForTest.StartLogin, UserNameForTest.StartLoginPassword);
 
-            var account = driver.FindElement(_accountButton);
-            account.Click();
             var actualLogin = driver.FindElement(_userLogin).Text;
             Assert.AreEqual(_expectedLogin, actualLogin, "Login failed");
         }

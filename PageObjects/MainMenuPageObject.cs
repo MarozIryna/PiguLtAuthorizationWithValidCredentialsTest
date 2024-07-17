@@ -34,14 +34,17 @@ namespace AuthorizationPiguPageTests.PageObjects
         private readonly By _loginInputButton = By.XPath("//*[@id='email']");
         private readonly By _passwordInputButton = By.XPath("//*[@id='password']");
         private readonly By _submitButton = By.XPath("//*[@id='submitButton']");
+        private readonly By _accountButton = By.XPath("//*[@id='headeMenu']/li[1]/a/i");
 
-        public void SingIn(string _login, string _password)
+        public void SingIn(string StartLogin, string StartLoginPassword)
         {
             driver.FindElement(_signInButton).Click();
             driver.FindElement(_loginInputButton).SendKeys(UserNameForTest.StartLogin);
             driver.FindElement(_passwordInputButton).SendKeys(UserNameForTest.StartLoginPassword);
             driver.FindElement(_submitButton).Click();
 
+            var account = driver.FindElement(_accountButton);
+            account.Click();
         }
     }
 }
